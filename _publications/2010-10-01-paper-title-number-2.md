@@ -1,14 +1,12 @@
 ---
-title: "Paper Title Number 2"
+title: "Robot Task Planning under Local Observability"
 collection: publications
 category: manuscripts
-permalink: /publication/2010-10-01-paper-title-number-2
-excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
-date: 2010-10-01
-venue: 'Journal 1'
-slidesurl: 'https://academicpages.github.io/files/slides2.pdf'
-paperurl: 'https://academicpages.github.io/files/paper2.pdf'
-citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
+permalink: /publication/2024-robot-task-planning
+excerpt: 'IEEE International Conference on Robotics and Automation (ICRA) 2024'
+date: 2024-05-01
+venue: 'IEEE International Conference on Robotics and Automation (ICRA)'
+authors: 'M. Merlin, S. Parr, N. Parikh, S. Orozco, V. Gupta, E. Rosen, G. Konidaris'
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+This work on robot task planning under local observability constraints was published at ICRA 2024, contributing to research on making robots generalize better to out-of-distribution tasks.

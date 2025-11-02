@@ -1,13 +1,12 @@
 ---
-title: "Paper Title Number 4"
+title: "On the I/O Complexity of the CYK Algorithm and of a Family of Related DP Algorithms"
 collection: publications
 category: conferences
-permalink: /publication/2024-02-17-paper-title-number-4
-excerpt: 'This paper is about fixing template issue #693.'
-date: 2024-02-17
-venue: 'GitHub Journal of Bugs'
-paperurl: 'https://academicpages.github.io/files/paper3.pdf'
-citation: 'Your Name, You. (2024). &quot;Paper Title Number 3.&quot; <i>GitHub Journal of Bugs</i>. 1(3).'
+permalink: /publication/2025-io-complexity-cyk
+excerpt: 'Algorithms and Data Structures Symposium (WADS) 2025'
+date: 2025-05-01
+venue: 'Algorithms and Data Structures Symposium (WADS)'
+authors: 'L. De Stefani and V. Gupta (equal contribution)'
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+This work on optimizing the I/O complexity of the CYK algorithm and related dynamic programming algorithms was published at WADS 2025, part of research on optimizing algorithms to run faster on hierarchical memory systems.
