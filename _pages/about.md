@@ -1,11 +1,14 @@
 ---
 permalink: /
 title: "Vedant Gupta"
-author_profile: true
 redirect_from:
   - /about/
   - /about.html
 ---
+
+<div style="text-align: center; margin-bottom: 2em;">
+  <img src="/images/profile.png" alt="Vedant Gupta" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;">
+</div>
 
 Welcome! I'm Vedant Gupta, a Computer Science and Mathematics graduate from Brown University with a passion for AI, robotics, and theoretical computer science.
 
@@ -30,3 +33,11 @@ Education
 Beyond Academics
 ======
 I'm also the Captain of Brown Men's Squash and a three-time Chaffee Cup champion (2023, 2024, 2025). I believe in balancing academic pursuits with athletic excellence and team leadership.
+
+Connect
+======
+**Location**: San Francisco, CA
+**Email**: [vedantgupta@gmail.com](mailto:vedantgupta@gmail.com)
+**Google Scholar**: [View Publications](https://scholar.google.com/citations?user=njUX3U0AAAAJ&hl=en)
+**GitHub**: [guptbot](https://github.com/guptbot)
+**Twitter**: [@vedant_gupta_16](https://twitter.com/vedant_gupta_16)
