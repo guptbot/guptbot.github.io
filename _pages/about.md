@@ -1,43 +1,25 @@
 ---
 permalink: /
-title: "Vedant Gupta"
+layout: single
+show_profile: true
 redirect_from:
   - /about/
   - /about.html
+
 ---
 
-<div style="text-align: center; margin-bottom: 2em;">
-  <img src="/images/profile.png" alt="Vedant Gupta" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;">
-</div>
+Welcome!
 
-Welcome! I'm Vedant Gupta, a Computer Science and Mathematics graduate from Brown University with a passion for AI, robotics, and theoretical computer science.
+I'm interested building AI that reasons reliably at scale. To me, this is a problem that combines the engineering thrill of creating something cool (imagine AI writing proofs and coherent codebases!) with the scientific joy of working on a "fundamental" question (What is intelligence? What are the necessary ingredients to build it?)
 
-Currently, I'm a Founding Member of Technical Staff at [Asari AI](https://www.asari.ai/) in San Francisco, where I'm building core infrastructure and performing applied research on reliable AI agents that perform systems-level reasoning.
+Currently, I'm a Founding Member of Technical Staff at [Asari AI](https://www.asari.ai/) in San Francisco. Working with a small team of 8, I'm building core infrastructure and performing applied research to create reliable AI agents that perform systems-level reasoning. We've received funding from Eric Schmidt, Jeff Dean, Caltech, etc.
 
-Research Interests
+I finished my B.Sc. in Mathematics and Computer Science from Brown University in May 2025 with both university and CS departmental honors. At Brown, I split my time between research (see below), and playing for the Men's Squash Team, including as captain in 2024-25. I've also spent time as an intern at the Boston Dynamics AI Institute (now RAI Institute) 
+
+
+
+Research
 ======
-- **Machine Learning & Robotics**: Developing methods to help robots generalize better to out-of-distribution tasks, with a focus on learning parameterized skills and task planning
-- **Theoretical Computer Science**: Optimizing algorithms to run efficiently on hierarchical memory systems
-- **Formal Verification**: Using tools like Lean and Mathlib for formal reasoning about computational systems
+I started my undergraduate students having no idea what "research" meant. My first exposures to the same showed me how research is often divided into theoretical and experimental camps; I decided I wanted to be "competent" at both. In experimental land, I worked at the Intelligent Robot Lab supervised by Prof. George Konidaris. Here, the focus of my research was to build algorithms that make robots generalize better to tasks outside their training data. In the theoretical real, I worked with Prof. Lorenzo De Stefani on styding the I/O complexity of Dynamic Programming algorithms, with the end goal of making algorithms run faster on hierarchical memory systems. 
 
-Experience
-======
-I've had the opportunity to work at Boston Dynamics, where I developed an interactive tour guide using the Boston Dynamics Spot robot, integrating natural language processing and emotional body movements. I've also contributed to published research on topics ranging from robot task planning and navigation abstractions to algorithmic complexity and systems-level reasoning.
 
-Education
-======
-**Sc.B. Computer Science and Mathematics (Honors)**, Brown University (2025)
-- GPA: 4.0/4.0
-- Honors: Magna Cum Laude, Computer Science Departmental Honors, Sigma Xi
-
-Beyond Academics
-======
-I'm also the Captain of Brown Men's Squash and a three-time Chaffee Cup champion (2023, 2024, 2025). I believe in balancing academic pursuits with athletic excellence and team leadership.
-
-Connect
-======
-**Location**: San Francisco, CA
-**Email**: [vedantgupta@gmail.com](mailto:vedantgupta@gmail.com)
-**Google Scholar**: [View Publications](https://scholar.google.com/citations?user=njUX3U0AAAAJ&hl=en)
-**GitHub**: [guptbot](https://github.com/guptbot)
-**Twitter**: [@vedant_gupta_16](https://twitter.com/vedant_gupta_16)

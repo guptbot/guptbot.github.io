@@ -1,0 +1,14 @@
+/* ==========================================================================
+   LAYOUT CONFIGURATION - Shared hyperparameters
+   ========================================================================== */
+
+// LAYOUT HYPERPARAMETERS - Use unitless ratios (not percentages)
+// This allows them to work in calc() with both percentages and pixel values
+$content-width-ratio: 0.6;                    // 60% - Width of main content
+$profile-width-ratio: 0.25;                    // 10% - Width of profile section when shown
+$right-margin-ratio: 0.1;                     // 20% - Right margin (always present)
+$left-margin-no-profile-ratio: 0.3;           // 20% - Left margin when no profile
+$left-margin-with-profile-ratio: 0.05;         // 10% - Left margin when profile shown
+
+// Note: When profile shown, left side = 10% margin + 10% profile = 20% total
+//       Content position stays the same (at 20% from left) whether profile shown or not

@@ -1,0 +1,99 @@
+/* ==========================================================================
+   PROFILE SECTION - Uses layout hyperparameters from _page.scss
+   ========================================================================== */
+
+.profile-section {
+  width: 100%;
+  background: var(--global-bg-color);
+  padding: 2rem 0;
+
+  // Mobile: center everything above content
+  @media screen and (max-width: #{$large - 1px}) {
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+
+  // Desktop: positioned in left margin space (scrolls with page)
+
+  // Case 1: Medium screens ($large <= width < $x-large)
+  // No max-width, container is full viewport
+  @media screen and (min-width: $large) and (max-width: #{$x-large - 1px}) {
+    position: absolute;
+    top: $masthead-height;
+
+    left: #{$left-margin-with-profile-ratio * 100%};   // 10% from left
+    width: #{$profile-width-ratio * 100%};             // 10% of viewport
+    padding-top: 1rem;
+  }
+
+  // Case 2: Large screens (width >= $x-large)
+  // Container fixed at 1280px, centered in viewport
+  @media screen and (min-width: $x-large) {
+    position: absolute;
+    top: $masthead-height;
+
+    // Container left edge = (100vw - 1280px) / 2
+    // Profile starts at: container left edge + 10% of 1280px (128px)
+    left: calc((100vw - #{$x-large}) / 2 + #{$x-large} * #{$left-margin-with-profile-ratio});
+    width: calc(#{$x-large} * #{$profile-width-ratio});
+    padding-top: 1rem;
+  }
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-avatar {
+  // Center the image within this container
+  display: flex;
+  justify-content: center;
+
+  img {
+    // Mobile: 50% of screen width, capped at 200px
+    width: 40%;
+    height: auto;
+    aspect-ratio: 1;        // Keeps square
+    object-fit: cover;
+    border: 2px solid var(--global-border-color);
+    display: block;
+
+    // Desktop: 85% of profile container (which is 10% of viewport)
+    @media screen and (min-width: $large) {
+      width: 85%;
+    }
+  }
+}
+
+.profile-social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .profile-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    color: var(--global-text-color);
+    transition: all 0.2s ease;
+    border-radius: 4px;
+
+    &:hover {
+      color: var(--global-link-color-hover);
+      background: var(--global-border-color);
+    }
+
+    i {
+      line-height: 1;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{% include base_path %}
+
+<div class="profile-section">
+  <div class="profile-container">
+    {% if site.author.avatar %}
+    <div class="profile-avatar">
+      <img src="{{ base_path }}/images/{{ site.author.avatar }}" alt="{{ site.author.name }}">
+    </div>
+    {% endif %}
+
+    <div class="profile-social-icons">
+      {% if site.author.email %}
+      <a href="mailto:{{ site.author.email }}" title="Email" class="profile-icon">
+        <i class="fas fa-envelope"></i>
+      </a>
+      {% endif %}
+
+      {% if site.author.github %}
+      <a href="https://github.com/{{ site.author.github }}" title="GitHub" class="profile-icon" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+      {% endif %}
+
+      {% if site.author.twitter %}
+      <a href="https://twitter.com/{{ site.author.twitter | remove: '@' }}" title="Twitter" class="profile-icon" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+      {% endif %}
+
+      {% if site.author.googlescholar %}
+      <a href="{{ site.author.googlescholar }}" title="Google Scholar" class="profile-icon" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+      {% endif %}
+    </div>
+  </div>
+</div>

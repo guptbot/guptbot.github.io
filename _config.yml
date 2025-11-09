@@ -121,11 +121,10 @@ social:
   links: # An array of links to social media profiles
 
 
-# Analytics
-analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
-  google:
-    tracking_id          :
+# Analytics - GoatCounter (privacy-friendly, no cookies)
+# Sign up at https://www.goatcounter.com/ and add your code below
+goatcounter:
+  code                   :  guptbot # Your GoatCounter code (e.g., "vedantgupta" for vedantgupta.goatcounter.com)
 
 
 # Reading Files
