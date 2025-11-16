@@ -1,0 +1,19 @@
+/* ==========================================================================
+   CONTENT BOXES - For grouping content visually
+   ========================================================================== */
+
+.box {
+  border: 1px solid var(--global-border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: var(--global-bg-color);
+
+  // Remove bottom margin from last child to avoid extra space
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  // Optional: subtle shadow for depth
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}

@@ -1,0 +1,62 @@
+---
+layout: compress
+---
+
+{% include base_path %}
+
+{% assign target_permalink = page.permalink %}
+{% assign sections = site.pages | where: "permalink", target_permalink | sort: "index" %}
+{% assign first_section = sections | first %}
+
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body>
+
+    {% include masthead.html %}
+
+    {% if first_section.show_profile %}
+      {% include profile.html %}
+    {% endif %}
+
+    <div id="main" role="main">
+      {% for section in sections %}
+        <article class="page{% if section.sidebar_title %} section-with-sidebar-title{% endif %}" itemscope itemtype="http://schema.org/CreativeWork" data-index="{{ section.index }}">
+          {% if forloop.first %}
+            {% if first_section.title %}<meta itemprop="headline" content="{{ first_section.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+            {% if first_section.excerpt %}<meta itemprop="description" content="{{ first_section.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+            {% if first_section.date %}<meta itemprop="datePublished" content="{{ first_section.date | date: "%B %d, %Y" }}">{% endif %}
+          {% endif %}
+          <div class="page__inner-wrap">
+            {% if section.title %}
+            <header>
+              <h1 class="page__title" itemprop="headline">{{ section.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
+            </header>
+            {% endif %}
+
+            <section class="page__content" itemprop="text">
+              {% if section.sidebar_title %}
+                <div class="section-sidebar-title">{{ section.sidebar_title }}</div>
+              {% endif %}
+              {{ section.content }}
+            </section>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+
+    <div class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include footer.html %}
+      </footer>
+    </div>
+
+    {% include scripts.html %}
+
+  </body>
+</html>
