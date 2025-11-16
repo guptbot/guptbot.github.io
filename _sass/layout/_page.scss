@@ -76,10 +76,12 @@
   }
 
   a {
-    text-decoration: underline;
+    color: var(--global-link-color);
+    text-decoration: none;
+    font-weight: bold;
 
     &:hover {
-      text-decoration: underline;
+      text-decoration: none;
 
       img {
         box-shadow: 0 0 10px rgba(#000, 0.25);

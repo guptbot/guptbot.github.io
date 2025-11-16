@@ -8,8 +8,8 @@ main:
   - title: "home"
     url: /
 
-  - title: "publications"
-    url: /publications/
-
   - title: "resume"
     url: /files/resume.pdf
+
+  - title: "misc"
+    url: /misc

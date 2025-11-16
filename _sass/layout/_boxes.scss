@@ -6,10 +6,14 @@
   border: 1px solid var(--global-border-color);
   border-radius: 8px;
   padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  background-color: var(--global-bg-color);
+  margin-bottom: 1rem;
+  background-color: var(--global-box-bg-color);
 
-  // Remove bottom margin from last child to avoid extra space
+  // Remove margins from first and last children to avoid extra space
+  > *:first-child {
+    margin-top: 0;
+  }
+
   > *:last-child {
     margin-bottom: 0;
   }
