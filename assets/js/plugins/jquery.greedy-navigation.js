@@ -17,38 +17,41 @@ function updateNav() {
 
   var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
 
-  // The visible list is overflowing the nav
-  if ($vlinks.width() > availableSpace) {
+  // Binary mode: Check if there would be ANY overflow
+  var wouldOverflow = $vlinks.width() > availableSpace;
 
-    while ($vlinks.width() > availableSpace && $vlinks.children("*:not(.persist)").length > 0) {
-      // Record the width of the list
-      breaks.push($vlinks.width());
-
-      // Move item to the hidden list
-      $vlinks.children("*:not(.persist)").last().prependTo($hlinks);
-
-      availableSpace = $btn.hasClass("hidden") ? $nav.width() : $nav.width() - $btn.width() - 30;
-
+  if (wouldOverflow) {
+    // Move ALL non-persistent items to the hidden list at once
+    var $movableItems = $vlinks.children("*:not(.persist)");
+    if ($movableItems.length > 0) {
+      breaks = [$vlinks.width()]; // Store only one breakpoint
+      $movableItems.each(function() {
+        $(this).prependTo($hlinks);
+      });
       // Show the dropdown btn
       $btn.removeClass("hidden");
     }
-
-    // The visible list is not overflowing
   } else {
+    // Check if ALL hidden items can fit without overflow
+    var tempWidth = $vlinks.width();
 
-    // There is space for another item in the nav
-    while (breaks.length > 0 && availableSpace > breaks[breaks.length - 1]) {
-      // Move the item to the visible list
-      if ($vlinks_persist_tail.children().length > 0) {
-        $hlinks.children().first().insertBefore($vlinks_persist_tail);
-      } else {
-        $hlinks.children().first().appendTo($vlinks);
+    // Calculate total width if all items were visible
+    $hlinks.children().each(function() {
+      // Approximate width - in reality items might have different widths
+      tempWidth += $(this).outerWidth(true);
+    });
+
+    if (tempWidth <= availableSpace && $hlinks.children().length > 0) {
+      // Move ALL items back to visible list
+      while ($hlinks.children().length > 0) {
+        if ($vlinks_persist_tail.children().length > 0) {
+          $hlinks.children().first().insertBefore($vlinks_persist_tail);
+        } else {
+          $hlinks.children().first().appendTo($vlinks);
+        }
       }
-      breaks.pop();
-    }
-
-    // Hide the dropdown btn if hidden list is empty
-    if (breaks.length < 1) {
+      breaks = [];
+      // Hide the dropdown btn
       $btn.addClass('hidden');
       $btn.removeClass('close');
       $hlinks.addClass('hidden');
@@ -56,7 +59,7 @@ function updateNav() {
   }
 
   // Keep counter updated
-  $btn.attr("count", breaks.length);
+  $btn.attr("count", $hlinks.children().length);
 
   // update masthead height and the body/sidebar top padding
   var mastheadHeight = $('.masthead').height();
