@@ -32,26 +32,29 @@ function updateNav() {
       $btn.removeClass("hidden");
     }
   } else {
-    // Check if ALL hidden items can fit without overflow
-    var tempWidth = $vlinks.width();
+    // Check if there are any hidden items
+    if ($hlinks.children().length > 0) {
+      // Calculate total width if all items were visible
+      var tempWidth = $vlinks.width();
+      $hlinks.children().each(function() {
+        tempWidth += $(this).outerWidth(true);
+      });
 
-    // Calculate total width if all items were visible
-    $hlinks.children().each(function() {
-      // Approximate width - in reality items might have different widths
-      tempWidth += $(this).outerWidth(true);
-    });
-
-    if (tempWidth <= availableSpace && $hlinks.children().length > 0) {
-      // Move ALL items back to visible list
-      while ($hlinks.children().length > 0) {
-        if ($vlinks_persist_tail.children().length > 0) {
-          $hlinks.children().first().insertBefore($vlinks_persist_tail);
-        } else {
-          $hlinks.children().first().appendTo($vlinks);
+      if (tempWidth <= availableSpace) {
+        // Move ALL items back to visible list
+        while ($hlinks.children().length > 0) {
+          if ($vlinks_persist_tail.children().length > 0) {
+            $hlinks.children().first().insertBefore($vlinks_persist_tail);
+          } else {
+            $hlinks.children().first().appendTo($vlinks);
+          }
         }
+        breaks = [];
       }
-      breaks = [];
-      // Hide the dropdown btn
+    }
+
+    // Always hide button if there are no hidden items
+    if ($hlinks.children().length === 0) {
       $btn.addClass('hidden');
       $btn.removeClass('close');
       $hlinks.addClass('hidden');
