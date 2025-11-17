@@ -1,0 +1,10 @@
+#!/bin/sh
+# Pre-commit hook to automatically build minified JavaScript
+
+echo "🔨 Building minified JavaScript..."
+npm run build:js
+
+# Add the built file to the commit
+git add assets/js/main.min.js
+
+echo "✅ JavaScript built successfully"
