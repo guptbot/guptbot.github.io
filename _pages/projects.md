@@ -13,7 +13,7 @@ A sampling of smaller scale projects and side quests.
 </div>
 
 <div class="box" markdown="1">
-[K9DB:](https://github.com/brownsys/K9db) An open source database system for GDPR compliance-by-construction. I contributed optimizations that halved memory overheads. Published at OSDI `23. \[[code](https://github.com/brownsys/K9db)\]
+[K9DB:](https://github.com/brownsys/K9db) An open source database system for GDPR compliance-by-construction. I contributed optimizations that halved memory overheads. Published at OSDI '23. \[[code](https://github.com/brownsys/K9db)\]
 </div>
 
 <div class="box" markdown="1">
