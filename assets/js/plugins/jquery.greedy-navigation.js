@@ -26,7 +26,7 @@ function updateNav() {
     if ($movableItems.length > 0) {
       breaks = [$vlinks.width()]; // Store only one breakpoint
       $movableItems.each(function() {
-        $(this).prependTo($hlinks);
+        $(this).appendTo($hlinks);
       });
       // Show the dropdown btn
       $btn.removeClass("hidden");
