@@ -56,7 +56,8 @@
 
   img {
     // Mobile: 50% of screen width, capped at 200px
-    width: 40%;
+    width: 60%;
+    max-width: 300px; 
     height: auto;
     aspect-ratio: 1;        // Keeps square
     object-fit: cover;
