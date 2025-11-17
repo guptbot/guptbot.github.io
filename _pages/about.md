@@ -15,7 +15,7 @@ I'm interested building AI that reasons reliably at scale. To me, this is a prob
 
 Currently, I'm a Founding Member of Technical Staff at [Asari AI](https://www.asari.ai/) in San Francisco. Working with a small team of 8, I'm building core infrastructure and performing applied research to create reliable AI agents that perform systems-level reasoning. We've received funding from Eric Schmidt, Jeff Dean, Caltech, etc.
 
-I finished my B.Sc. in Mathematics and Computer Science from Brown University in May 2025 with both university and CS departmental honors. At Brown, I split my time between research, and playing for the Men's Squash Team, including as captain in 2024-25. I've also spent time as an intern at the Boston Dynamics AI Institute (now RAI Institute)
+I finished my B.Sc. in Mathematics and Computer Science from [Brown University](https://www.brown.edu/) in May 2025 with both university and CS departmental honors. At Brown, I split my time between research, and playing for the Men's Squash Team, including as captain in 2024-25. I've also spent time as an intern at the [Boston Dynamics AI Institute](https://rai-inst.com/) (now RAI Institute)
 
 
 ------------------------------

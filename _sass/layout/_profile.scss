@@ -20,6 +20,7 @@
   @media screen and (min-width: $large) and (max-width: #{$x-large - 1px}) {
     position: absolute;
     top: $masthead-height;
+    z-index: 10;
 
     left: #{$left-margin-with-profile-ratio * 100%};   // 10% from left
     width: #{$profile-width-ratio * 100%};             // 10% of viewport
@@ -31,6 +32,7 @@
   @media screen and (min-width: $x-large) {
     position: absolute;
     top: $masthead-height;
+    z-index: 10;
 
     // Container left edge = (100vw - 1280px) / 2
     // Profile starts at: container left edge + 10% of 1280px (128px)

@@ -6,13 +6,13 @@ show_profile: false
 sidebar_title: Research
 ---
 
-I started my undergraduate students having no idea what "research" meant. My first exposures to the same showed me how research is often divided into theoretical and experimental camps; I decided I wanted to be "competent" at both. In experimental land, I worked at the Intelligent Robot Lab supervised by Prof. George Konidaris. Here, the focus of my research was to build algorithms that make robots generalize better to tasks outside their training data. In the theoretical real, I worked with Prof. Lorenzo De Stefani on styding the I/O complexity of Dynamic Programming algorithms, with the end goal of making algorithms run faster on hierarchical memory systems.
+I started my undergraduate students having no idea what "research" meant. My first exposures to the same showed me how research is often divided into theoretical and experimental camps; I decided I wanted to be "competent" at both. In experimental land, I worked at the Intelligent Robot Lab supervised by [George Konidaris](https://cs.brown.edu/people/gdk/). Here, the focus of my research was to build algorithms that make robots generalize better to tasks outside their training data. In the theoretical real, I worked with [Lorenzo De Stefani](https://vivo.brown.edu/display/ld9) on styding the I/O complexity of Dynamic Programming algorithms, with the end goal of making algorithms run faster on hierarchical memory systems.
 
 <div class="box" markdown="1">
 [Learning Parameterized Skills from Demonstrations](#)<br>
 *Neural Information Processing Systems (NeurIPS) 2025*<br>
 **V. Gupta**, H. Fu, C. Luo, Y. Jiang, G. Konidaris<br>
-\[[paper](#)\]  \[\[[github](#)\] \[\[[website](#)\] 
+\[[paper](#)\]  \[[github](#)\] \[[website](#)\] 
 
 *Introduces DEPS, an algorithm improving the generalization of robots to out of distribution tasks by discovering and using skills.*<br>
 </div>
