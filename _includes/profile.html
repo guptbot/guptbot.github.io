@@ -27,6 +27,12 @@
       </a>
       {% endif %}
 
+      {% if site.author.linkedin %}
+      <a href="https://linkedin.com/in/{{ site.author.linkedin }}" title="LinkedIn" class="profile-icon" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      {% endif %}
+
       {% if site.author.googlescholar %}
       <a href="{{ site.author.googlescholar }}" title="Google Scholar" class="profile-icon" target="_blank" rel="noopener">
         <i class="ai ai-google-scholar"></i>
