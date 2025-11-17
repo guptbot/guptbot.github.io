@@ -13,7 +13,7 @@ I've worked at the experimental and theoretical ends of CS research. On the expe
 **V. Gupta**, H. Fu, C. Luo, Y. Jiang, G. Konidaris<br>
 \[[paper](https://openreview.net/pdf?id=FiZ7gadynD)\] \[[github](https://github.com/guptbot/DEPS)\] \[[website](https://sites.google.com/view/parameterized-skills)\] 
 
-*An algorithm that learns interpretable parameterized skills that drastically improve generalisation to unseen tasks, especially in data-constrained settings and on out-of-distribution tasks.*<br>
+*An algorithm that learns interpretable parameterized skills that improve generalisation to unseen tasks, especially in data-constrained settings and on out-of-distribution tasks.*<br>
 </div>
 
 <div class="box" markdown="1">
