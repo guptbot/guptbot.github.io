@@ -21,7 +21,7 @@ A sampling of smaller scale projects and side quests.
 </div>
 
 <div class="box" markdown="1">
-**Spot Tour Guide:** A interactive robot tour guide that interacts with users while generating custom tours on the fly. *Built at the RAI Institute.*
+**Spot Tour Guide:** An interactive robot tour guide that interacts with users while generating custom tours on the fly. *Built at the RAI Institute.*
 </div>
 
 <div class="box" markdown="1">
