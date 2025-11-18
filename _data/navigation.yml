@@ -8,8 +8,12 @@ main:
   - title: "home"
     url: /
 
+  - title: "contact"
+    url: /#contact
+
   - title: "resume"
     url: /files/resume.pdf
 
   - title: "misc"
     url: /misc
+
