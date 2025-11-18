@@ -32,6 +32,10 @@
 
     @include breakpoint($x-large) {
       max-width: $x-large;
+      // Center masthead text over profile picture
+      // Left padding = margin + (profile width / 2) - (text width / 2)
+      // Using CSS to calculate text width dynamically
+      padding-left: calc(#{$x-large} * #{$left-margin-with-profile-ratio} + #{$x-large} * #{$profile-width-ratio} / 3);
     }
 
     nav {

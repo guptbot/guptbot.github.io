@@ -5,7 +5,7 @@ index: 2
 show_profile: false
 sidebar_title: Research
 ---
-I've worked at the experimental and theoretical ends of CS research. On the experimental side, I worked at the Intelligent Robot Lab with [George Konidaris](https://cs.brown.edu/people/gdk/) to build algorithms that improve robot generalization outside their training distribution. On the theoretical side, I worked with [Lorenzo De Stefani](https://vivo.brown.edu/display/ld9) analyzing the I/O complexity of Dynamic Programming algorithms, aiming to make algorithms run faster on hierarchical memory systems.
+I've worked at the experimental and theoretical ends of CS research. On the experimental side, I worked at the Intelligent Robot Lab with [George Konidaris](https://cs.brown.edu/people/gdk/) to build algorithms that improve robot generalization outside their training distribution. On the theoretical side, I worked with [Lorenzo De Stefani](https://vivo.brown.edu/display/ld9) to analyze the I/O complexity of Dynamic Programming algorithms, aiming to make algorithms run faster on hierarchical memory systems.
 
 <div class="box" markdown="1">
 [Learning Parameterized Skills from Demonstrations](https://openreview.net/pdf?id=FiZ7gadynD)<br>
