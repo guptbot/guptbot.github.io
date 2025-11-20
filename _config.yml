@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Vedant Gupta"
 title_separator          : "-"
 name                     : &name "Vedant Gupta"
-description              : &description ""
+description              : &description "Vedant Gupta - AI Researcher and Engineer building reliable AI that reasons at scale. Founding MTS at Asari AI, Brown University graduate in Mathematics and Computer Science."
 url                      : https://vedantgupta.io
 baseurl                  : ""
 repository               : "guptbot/guptbot.github.io"
@@ -21,7 +21,7 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Vedant Gupta"
-  bio              : ""
+  bio              : "Building reliable AI that reasons at scale"
   location         : "San Francisco, CA"
   email            : "vedantgupta@gmail.com"
 

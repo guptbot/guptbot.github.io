@@ -10,4 +10,35 @@
 <link rel="apple-touch-icon" sizes="180x180" href="{{ base_path }}/images/favicon.svg"/>
 <meta name="theme-color" content="#ffffff"/>
 
+<!-- Structured Data (Schema.org JSON-LD) for Search Engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ site.author.name }}",
+  "url": "{{ site.url }}",
+  "email": "{{ site.author.email }}",
+  "jobTitle": "Founding Member of Technical Staff",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Asari AI"
+  },
+  "alumniOf": {
+    "@type": "Organization",
+    "name": "Brown University"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "San Francisco",
+    "addressRegion": "CA"
+  },
+  "sameAs": [
+    "{{ site.author.github }}",
+    "https://twitter.com/{{ site.author.twitter | remove: '@' }}",
+    "https://linkedin.com/in/{{ site.author.linkedin }}",
+    "{{ site.author.googlescholar }}"
+  ]
+}
+</script>
+
 <!-- end custom head snippets -->

@@ -5,6 +5,12 @@
 <!-- Page title for browser tab -->
 <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
+<!-- Meta Description for Search Engines -->
+<meta name="description" content="{{ site.description }}">
+
+<!-- Canonical URL - Prevents duplicate content issues -->
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
