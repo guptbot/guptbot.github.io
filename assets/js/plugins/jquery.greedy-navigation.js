@@ -15,7 +15,7 @@ var breaks = [];
 
 function updateNav() {
 
-  var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
+  var availableSpace = $nav.width() - $btn.outerWidth(true) - 30;
 
   // Binary mode: Check if there would be ANY overflow
   var wouldOverflow = $vlinks.width() > availableSpace;
