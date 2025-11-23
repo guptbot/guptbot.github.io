@@ -24,7 +24,13 @@ function updateNav() {
     // Move ALL non-persistent items to the hidden list at once
     var $movableItems = $vlinks.children("*:not(.persist)");
     if ($movableItems.length > 0) {
-      breaks = [$vlinks.width()]; // Store only one breakpoint
+      // Store widths BEFORE moving (while visible-links CSS is applied)
+      var totalMovableWidth = 0;
+      $movableItems.each(function() {
+        totalMovableWidth += $(this).outerWidth(true);
+      });
+      breaks = [totalMovableWidth]; // Store total width of movable items
+
       $movableItems.each(function() {
         $(this).appendTo($hlinks);
       });
@@ -34,11 +40,10 @@ function updateNav() {
   } else {
     // Check if there are any hidden items
     if ($hlinks.children().length > 0) {
-      // Calculate total width if all items were visible
-      var tempWidth = $vlinks.width();
-      $hlinks.children().each(function() {
-        tempWidth += $(this).outerWidth(true);
-      });
+      // Use stored width from when items were visible
+      var totalMovableWidth = breaks.length > 0 ? breaks[0] : 0;
+      var persistentWidth = $vlinks.width();
+      var tempWidth = persistentWidth + totalMovableWidth;
 
       if (tempWidth <= availableSpace) {
         // Move ALL items back to visible list
