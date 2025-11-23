@@ -35,7 +35,7 @@ M. Merlin, S. Parr, N. Parikh, S. Orozco, **V. Gupta**, E. Rosen, G. Konidaris<b
 
 <div class="box" markdown="1">
 [Synthesizing Navigation Abstractions for Planning with Portable Manipulation Skills](https://openreview.net/pdf?id=W8MjsxHrDpL)<br>
-Conference on Robot Learning (CoRL) 2023<br>
+*Conference on Robot Learning (CoRL) 2023*<br>
 E. Rosen, S. James, S. Orozco, **V. Gupta**, M. Merlin, S. Tellex, G. Konidaris<br>
 \[[paper](https://openreview.net/pdf?id=W8MjsxHrDpL)\]
 </div>
